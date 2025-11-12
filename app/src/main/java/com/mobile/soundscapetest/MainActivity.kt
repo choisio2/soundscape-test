@@ -87,6 +87,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SpotifyActivity::class.java)
             startActivity(intent)
         }
+
+        val movetoRV = findViewById<Button>(R.id.moveListBtn)
+        movetoRV.setOnClickListener {
+            val intent = Intent(this, RclistActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 

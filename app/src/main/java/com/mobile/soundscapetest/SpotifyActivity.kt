@@ -1,8 +1,10 @@
 package com.mobile.soundscapetest
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -30,11 +32,11 @@ import kotlin.coroutines.suspendCoroutine
 class SpotifyActivity : AppCompatActivity() {
 
     // -----------------------------------------------------------------------------------------
-    // ⚠️ 1. 설정 필수: Spotify 대시보드에서 발급받은 값으로 변경
+    // 1. 설정 필수: Spotify 대시보드에서 발급받은 값
     // -----------------------------------------------------------------------------------------
     companion object {
-        private const val CLIENT_ID = "11f5dcb42f4c4ae2a5f84ea6081abea5" // ⚠️ 본인의 Client ID로 변경
-        private const val REDIRECT_URI = "com.mobile.soundscapetest://callback" // ⚠️ 본인의 Redirect URI로 변경
+        private const val CLIENT_ID = "11f5dcb42f4c4ae2a5f84ea6081abea5"
+        private const val REDIRECT_URI = "com.mobile.soundscapetest://callback"
         private const val TAG = "SpotifyActivity"
     }
 
@@ -42,7 +44,7 @@ class SpotifyActivity : AppCompatActivity() {
     // 2. Spotify App Remote 및 UI 바인딩 변수
     // -----------------------------------------------------------------------------------------
     private var spotifyAppRemote: SpotifyAppRemote? = null
-    private lateinit var binding: ActivitySpotifyBinding // ⚠️ ViewBinding
+    private lateinit var binding: ActivitySpotifyBinding // ViewBinding
 
     // 현재 플레이어 상태 구독 (UI 업데이트용)
     private var playerStateSubscription: Subscription<PlayerState>? = null
@@ -195,10 +197,7 @@ class SpotifyActivity : AppCompatActivity() {
                 remote.playerApi.pause()
                     .setResultCallback { logMessage("음악을 일시정지합니다.") }
                     .setErrorCallback(::logError)
-            } else {
-                // 3. 아무것도 재생 중이 아닐 때 -> EditText의 트랙 재생
-                playTrackFromInput()
-            }
+            } 
         }
     }
 
@@ -207,21 +206,6 @@ class SpotifyActivity : AppCompatActivity() {
         val remote = assertAppRemoteConnected() ?: return
         remote.playerApi.skipNext()
             .setResultCallback { logMessage("다음 곡으로 건너뜁니다.") }
-            .setErrorCallback(::logError)
-    }
-
-    /** EditText에 입력된 URI로 트랙 재생 */
-    private fun playTrackFromInput() {
-        val remote = assertAppRemoteConnected() ?: return
-        val trackUri = binding.editTextTrackUri.text.toString()
-
-        if (trackUri.isBlank() || !trackUri.startsWith("spotify:track:")) {
-            logMessage("유효한 Spotify 트랙 URI를 입력하세요.")
-            return
-        }
-
-        remote.playerApi.play(trackUri)
-            .setResultCallback { logMessage("트랙 재생을 시작합니다: $trackUri") }
             .setErrorCallback(::logError)
     }
 
@@ -265,7 +249,6 @@ class SpotifyActivity : AppCompatActivity() {
         binding.textViewTrackTitle.visibility = visibility
         binding.textViewArtistName.visibility = visibility
         binding.playbackControlsLayout.visibility = visibility
-        binding.editTextTrackUri.visibility = visibility
 
         // 연결이 끊기면 플레이스홀더 이미지로 복원
         if (!isConnected) {
