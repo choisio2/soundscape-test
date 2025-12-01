@@ -17,6 +17,7 @@ import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.mobile.soundscapetest.PrefFragment.mynameFragment
 import java.io.IOException
 import kotlin.jvm.java
 import kotlin.math.log10
@@ -82,16 +83,30 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        val movetospotify = findViewById<Button>(R.id.moveSpotifyBtn)
-        movetospotify.setOnClickListener {
-            val intent = Intent(this, SpotifyActivity::class.java)
-            startActivity(intent)
-        }
-
         val movetoRV = findViewById<Button>(R.id.moveListBtn)
         movetoRV.setOnClickListener {
             val intent = Intent(this, RclistActivity::class.java)
             startActivity(intent)
+        }
+
+        /* ----- 프래그먼트로 이동 ----- */
+        val movetoFragment = findViewById<Button>(R.id.moveFragment)
+
+        movetoFragment.setOnClickListener {
+            // 1. 이동할 프래그먼트 객체 생성
+            val fragment = mynameFragment()
+
+            // 2. 프래그먼트 매니저를 통해 트랜잭션 시작
+            val transaction = supportFragmentManager.beginTransaction()
+
+            // 3. R.id.fragment_container 영역을 fragment로 교체(replace)
+            transaction.replace(R.id.fragment_container, fragment)
+
+            // (선택사항) 뒤로가기 버튼 누르면 다시 돌아오게 하려면 아래 줄 추가
+            transaction.addToBackStack(null)
+
+            // 4. 적용
+            transaction.commit()
         }
 
     }

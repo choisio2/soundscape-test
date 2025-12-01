@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pref_nav"
+    app:startDestination="@id/mynameFragment">
+    <fragment
+        android:id="@+id/mynameFragment"
+        android:name="com.mobile.soundscapetest.PrefFragment.mynameFragment"
+        android:label="mynameFragment" >
+        <action
+            android:id="@+id/action_mynameFragment_to_singerFragment"
+            app:destination="@id/singerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singerFragment"
+        android:name="com.mobile.soundscapetest.PrefFragment.SingerFragment"
+        android:label="fragment_singer"
+        tools:layout="@layout/fragment_singer" >
+        <action
+            android:id="@+id/action_singerFragment_to_genreFragment"
+            app:destination="@id/genreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genreFragment"
+        android:name="com.mobile.soundscapetest.PrefFragment.GenreFragment"
+        android:label="fragment_genre"
+        tools:layout="@layout/fragment_genre" />
+</navigation>

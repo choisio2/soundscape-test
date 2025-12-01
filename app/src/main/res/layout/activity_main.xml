@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="20dp"
+
     tools:context=".MainActivity">
 
     <TextView
@@ -14,8 +13,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="이거 누르면 데시벨 측정"
-        android:textSize="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/measureButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/measureButton"
@@ -23,51 +27,125 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
         android:text="데시벨 측정"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="40dp"
+        app:layout_constraintTop_toBottomOf="@id/decibelText"
+        app:layout_constraintBottom_toTopOf="@id/divider1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:layout_width="match_parent"
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
         android:layout_height="3dp"
         android:background="#BDBDBD"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="40dp"
+        app:layout_constraintTop_toBottomOf="@id/measureButton"
+        app:layout_constraintBottom_toTopOf="@id/infoMoveSpotify"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/infoMoveSpotify"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="이거 누르면 Spotify 페이지로 이동"
-        android:textSize="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:text="이거 누르면 Spotify Remote로 이동"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/divider1"
+        app:layout_constraintBottom_toTopOf="@id/moveSpotifyBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/moveSpotifyBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#2FE007"
-        android:text="Spotify"/>
+        android:text="Spotify"
+        app:layout_constraintTop_toBottomOf="@id/infoMoveSpotify"
+        app:layout_constraintBottom_toTopOf="@id/divider2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:layout_width="match_parent"
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
         android:layout_height="3dp"
         android:layout_marginTop="30dp"
         android:background="#BDBDBD"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="40dp"
+        app:layout_constraintTop_toBottomOf="@id/moveSpotifyBtn"
+        app:layout_constraintBottom_toTopOf="@id/infoMoveList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/infoMoveList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="이거 누르면 리스트뷰 페이지로 이동"
-        android:textSize="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/divider2"
+        app:layout_constraintBottom_toTopOf="@id/moveListBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/moveListBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#2196F3"
-        android:text="ListView로 연결" />
+        android:text="ListView로 연결"
+        app:layout_constraintTop_toBottomOf="@id/infoMoveList"
+        app:layout_constraintBottom_toTopOf="@id/divider3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="30dp"
+        android:background="#BDBDBD"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintTop_toBottomOf="@id/moveListBtn"
+        app:layout_constraintBottom_toTopOf="@id/infoMoveArtist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/infoMoveArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이거 누르면 아티스트 페이지로 이동"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/divider3"
+        app:layout_constraintBottom_toTopOf="@id/moveFragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/moveFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Artist로 연결"
+        app:layout_constraintTop_toBottomOf="@id/infoMoveArtist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

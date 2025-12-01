@@ -27,12 +27,8 @@ class RclistActivity : AppCompatActivity() {
         binding.songRV.adapter = adapter
         binding.songRV.layoutManager = LinearLayoutManager(this)
     }
-
-    /**
-     * DataModel 10개를 생성하여 songList에 추가합니다.
-     * * 중요: DataModel의 'cover' 필드에는 Glide가 로드할 수 있는
-     * 실제 이미지 URL ("https://i.scdn.co/image/...")을 넣었습니다.
-     */
+    
+    // 리스트 생성
     private fun loadNewJeansSongs() {
         songList.add(
             DataModel(
