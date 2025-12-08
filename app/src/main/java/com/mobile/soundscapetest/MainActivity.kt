@@ -18,6 +18,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.mobile.soundscapetest.PrefFragment.mynameFragment
+import com.mobile.soundscapetest.playlist.PlaylistActivity
 import java.io.IOException
 import kotlin.jvm.java
 import kotlin.math.log10
@@ -85,7 +86,7 @@ class MainActivity : AppCompatActivity() {
 
         val movetoRV = findViewById<Button>(R.id.moveListBtn)
         movetoRV.setOnClickListener {
-            val intent = Intent(this, RclistActivity::class.java)
+            val intent = Intent(this, PlaylistActivity::class.java)
             startActivity(intent)
         }
 

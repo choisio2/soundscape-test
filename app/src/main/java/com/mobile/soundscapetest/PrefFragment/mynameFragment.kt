@@ -74,6 +74,13 @@ class mynameFragment : Fragment() {
                 if (isCharValid && isLengthValid) {
                     binding.btnNext.visibility = View.VISIBLE
                     binding.ellipse.visibility = View.VISIBLE
+
+                    // 애니메이션
+                    binding.btnNext.alpha = 0f
+                    binding.btnNext.animate().alpha(1f).setDuration(300).start()
+                    binding.ellipse.alpha = 0f
+                    binding.ellipse.animate().alpha(1f).setDuration(300).start()
+
                 } else {
                     binding.btnNext.visibility = View.GONE
                     binding.ellipse.visibility = View.GONE

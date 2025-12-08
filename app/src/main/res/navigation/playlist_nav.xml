@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playlist_nav"
+    app:startDestination="@id/gallerymodeFragment">
+
+    <fragment
+        android:id="@+id/gallerymodeFragment"
+        android:name="com.mobile.soundscapetest.playlist.GallerymodeFragment"
+        android:label="GallerymodeFragment" >
+        <action
+            android:id="@+id/action_gallerymodeFragment_to_listmodeFragment"
+            app:destination="@id/listmodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listmodeFragment"
+        android:name="com.mobile.soundscapetest.playlist.ListmodeFragment"
+        android:label="ListmodeFragment" >
+        <action
+            android:id="@+id/action_listmodeFragment_to_gallerymodeFragment"
+            app:destination="@id/gallerymodeFragment" />
+    </fragment>
+</navigation>
