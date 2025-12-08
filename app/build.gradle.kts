@@ -86,6 +86,7 @@ dependencies {
     // Kotlin
     implementation("androidx.fragment:fragment-ktx:$fragment_version")
 
-
+    // 플레이리스트 갤러리형에서 블러 처리 도와주는 기능
+    implementation("jp.wasabeef:glide-transformations:4.3.0")
 
 }
