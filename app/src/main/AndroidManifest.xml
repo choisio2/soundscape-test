@@ -17,6 +17,9 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:allowBackup, android:label, android:theme, android:icon">
         <activity
+            android:name=".result.ResultActivity"
+            android:exported="false" />
+        <activity
             android:name=".playlist.PlaylistActivity"
             android:exported="false" />
         <activity

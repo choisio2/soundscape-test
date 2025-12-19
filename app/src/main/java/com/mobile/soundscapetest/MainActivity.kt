@@ -19,6 +19,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.mobile.soundscapetest.PrefFragment.mynameFragment
 import com.mobile.soundscapetest.playlist.PlaylistActivity
+import com.mobile.soundscapetest.result.ResultActivity
 import java.io.IOException
 import kotlin.jvm.java
 import kotlin.math.log10
@@ -84,11 +85,20 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        // --- 리스트형/갤러리형 페이지로 이동 ---
         val movetoRV = findViewById<Button>(R.id.moveListBtn)
         movetoRV.setOnClickListener {
             val intent = Intent(this, PlaylistActivity::class.java)
             startActivity(intent)
         }
+
+        // --- 추천결과 페이지로 이동 ---
+        val movetoResult = findViewById<Button>(R.id.moveResultBtn)
+        movetoResult.setOnClickListener {
+            val intent = Intent(this, ResultActivity::class.java)
+            startActivity(intent)
+        }
+
 
         /* ----- 프래그먼트로 이동 ----- */
         val movetoFragment = findViewById<Button>(R.id.moveFragment)
