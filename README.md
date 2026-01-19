@@ -11,6 +11,7 @@
 
 지금 바로 당신의 환경이 들려주는 음악에 귀를 기울여 보세요.
 
+<br/>
 
 ## ✨ 주요 기능 
 
@@ -24,25 +25,23 @@
 
 ## 🎨 UI
 
-|소셜 로그인|홈화면|홈 히스토리|
-|---|---|---|
-|<img width="1200" height="2541" alt="kakao_oauth_screenshot" src="https://github.com/user-attachments/assets/b4da05ba-b9bd-4c79-98f8-836cbcfbd08e" />|<img width="1200" height="2541" alt="home_screenshot" src="https://github.com/user-attachments/assets/0d2b0162-bf8d-40ab-b15c-96fe6d070e6e" />|<img width="1200" height="2541" alt="home_history_screenshot" src="https://github.com/user-attachments/assets/8f7f79b4-7e2e-4021-93c8-02841e9995be" />|
-
-|라이브러리|둘러보기|마이페이지|
-|---|---|---|
-|<img width="1200" height="2541" alt="library_screenshot" src="https://github.com/user-attachments/assets/79c32ce5-c71f-4a04-8f1c-9dcaf01d38ba" />|<img width="1200" height="2541" alt="explore_screenshot" src="https://github.com/user-attachments/assets/358d75b9-0bb9-4d90-b735-34f806ffd926" />|<img width="1200" height="2541" alt="mypage_screenshot" src="https://github.com/user-attachments/assets/29d79fb3-3ef0-46b7-9b9e-0c4dbf1731b8" />|
+|소셜 로그인|홈화면|홈 히스토리|라이브러리|둘러보기|마이페이지|
+|---|---|---|---|---|---|
+|<img width="120" alt="kakao_oauth_screenshot" src="https://github.com/user-attachments/assets/b4da05ba-b9bd-4c79-98f8-836cbcfbd08e" />|<img width="120" alt="home_screenshot" src="https://github.com/user-attachments/assets/0d2b0162-bf8d-40ab-b15c-96fe6d070e6e" />|<img width="120" alt="home_history_screenshot" src="https://github.com/user-attachments/assets/8f7f79b4-7e2e-4021-93c8-02841e9995be" />|<img width="120" alt="library_screenshot" src="https://github.com/user-attachments/assets/79c32ce5-c71f-4a04-8f1c-9dcaf01d38ba" />|<img width="120" alt="explore_screenshot" src="https://github.com/user-attachments/assets/358d75b9-0bb9-4d90-b735-34f806ffd926" />|<img width="120" alt="mypage_screenshot" src="https://github.com/user-attachments/assets/29d79fb3-3ef0-46b7-9b9e-0c4dbf1731b8" />|
 
 <br/>
 
 ## 📱 실행 화면 
 
+[풀시연영상](https://youtu.be/HjFp9eipC_4)
+
 | 온보딩 | 추천 받기 |
 |---|---|
-|<img src="https://github.com/user-attachments/assets/500f6079-8c37-428e-8069-7ab2987bedc9" width="320" />|<img src="https://github.com/user-attachments/assets/15bf8aa5-ed76-4be7-a292-4c64e36a4ab5" width="320"/>|
+|<img src="https://github.com/user-attachments/assets/500f6079-8c37-428e-8069-7ab2987bedc9" width="250" />|<img src="https://github.com/user-attachments/assets/15bf8aa5-ed76-4be7-a292-4c64e36a4ab5" width="250"/>|
 
 | 라이브러리 | 둘러보기 |
 |---|---|
-|<img src="https://github.com/user-attachments/assets/3350eff3-9bf9-49e6-be80-18b31127aa21" width="320"/>|<img src="https://github.com/user-attachments/assets/37769da1-5a81-4baf-82f8-afcb2b589fe0" width="320"/>|
+|<img src="https://github.com/user-attachments/assets/3350eff3-9bf9-49e6-be80-18b31127aa21" width="250"/>|<img src="https://github.com/user-attachments/assets/37769da1-5a81-4baf-82f8-afcb2b589fe0" width="250"/>|
 
 <br/>
 
@@ -57,13 +56,11 @@
 
 ##  🛠 기술 스택
 
-<img width="1920" height="1080" alt="TechStack" src="https://github.com/user-attachments/assets/f20deb13-80c4-48d4-9062-e4e51d789228" />
+<img width="1920" height="665" alt="Tech Stack" src="https://github.com/user-attachments/assets/a921d846-ea14-4ad7-b378-f20ccec71159" />
+
 
 <br/>
 
 ## 🏗️ 서비스 아키텍쳐
 
-<img width="1899" height="981" alt="ServiceArchitecture" src="https://github.com/user-attachments/assets/c9df54db-e190-417b-be2c-a750fc1f7a6a" />
-
-
-
+<img width="1769" height="981" alt="ServiceArchitecture" src="https://github.com/user-attachments/assets/8c7f9547-ca0f-496b-9020-654c99a32313" />
