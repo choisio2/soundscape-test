@@ -33,7 +33,7 @@
 
 ## 📱 실행 화면 
 
-[풀시연영상](https://youtu.be/HjFp9eipC_4)
+[📽️👉 풀 시연영상 보러가기](https://youtu.be/HjFp9eipC_4)
 
 | 온보딩 | 추천 받기 |
 |---|---|
