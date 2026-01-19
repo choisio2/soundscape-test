@@ -29,7 +29,7 @@
 
 |라이브러리|둘러보기|마이페이지|
 |---|---|---|
-|<img width="1200" height="2541" alt="library_screenshot" src="https://github.com/user-attachments/assets/79c32ce5-c71f-4a04-8f1c-9dcaf01d38ba" />|<img width="1200" height="2541" alt="explore_screenshot" src="https://github.com/user-attachments/assets/a986aa0f-98c1-4108-9e90-88aab0955b64" />|<img width="1200" height="2541" alt="mypage_screenshot" src="https://github.com/user-attachments/assets/29d79fb3-3ef0-46b7-9b9e-0c4dbf1731b8" />|
+|<img width="1200" height="2541" alt="library_screenshot" src="https://github.com/user-attachments/assets/79c32ce5-c71f-4a04-8f1c-9dcaf01d38ba" />|<img width="1200" height="2541" alt="explore_screenshot" src="https://github.com/user-attachments/assets/358d75b9-0bb9-4d90-b735-34f806ffd926" />|<img width="1200" height="2541" alt="mypage_screenshot" src="https://github.com/user-attachments/assets/29d79fb3-3ef0-46b7-9b9e-0c4dbf1731b8" />|
 
 <br/>
 
@@ -48,9 +48,9 @@
 ## 🧑‍💻 팀원 소개
 
 |강희구|강지혜|서정현|최수정|이선우|
-|--|--|--|--|--|
-|(깃허브 프로필 사진 링크)|사진2|사진3|사진4|사진5|
-|BE|BE|FE|FE|DA|
+|:------:|:------:|:------:|:------:|:------:|
+| <img src="https://avatars.githubusercontent.com/u/66203950?v=4" alt="강희구" width="150"> | <img src="https://avatars.githubusercontent.com/u/146721079?v=4" alt="강지혜" width="150"> | <img src="https://avatars.githubusercontent.com/u/200588020?v=4" alt="서정현" width="150"> | <img src="https://avatars.githubusercontent.com/u/165886570?v=4" alt="최수정" width="150"> | <img src="https://avatars.githubusercontent.com/u/226903380?v=4" alt="이선우" width="150"> |
+| **BE** | **BE** | **FE** | **FE** | **DA** |
 
 <br/>
 
