@@ -23,7 +23,7 @@
 
 ## 🎨 UI
 
-|소셜 로그인|홈화면|라이브러리|
+|소셜 로그인|홈화면|홈 히스토리|
 |---|---|---|
 |<img width="1200" height="2541" alt="kakao_oauth_screenshot" src="https://github.com/user-attachments/assets/b4da05ba-b9bd-4c79-98f8-836cbcfbd08e" />|<img width="1200" height="2541" alt="home_screenshot" src="https://github.com/user-attachments/assets/0d2b0162-bf8d-40ab-b15c-96fe6d070e6e" />|<img width="1200" height="2541" alt="home_history_screenshot" src="https://github.com/user-attachments/assets/8f7f79b4-7e2e-4021-93c8-02841e9995be" />|
 
@@ -37,9 +37,13 @@
 
 ## 📱 실행 화면 
 
-|온보딩|추천 받기|라이브러리|둘러보기|
+| 온보딩 | 추천 받기 | 라이브러리 | 둘러보기 |
 |---|---|---|---|
-|![onboarding](https://github.com/user-attachments/assets/500f6079-8c37-428e-8069-7ab2987bedc9)|![recommendation](https://github.com/user-attachments/assets/15bf8aa5-ed76-4be7-a292-4c64e36a4ab5)|![library](https://github.com/user-attachments/assets/3350eff3-9bf9-49e6-be80-18b31127aa21)|![explore](https://github.com/user-attachments/assets/37769da1-5a81-4baf-82f8-afcb2b589fe0)|
+| 
+<img src="https://github.com/user-attachments/assets/500f6079-8c37-428e-8069-7ab2987bedc9" width="1200" height="2541"/> | 
+<img src="https://github.com/user-attachments/assets/15bf8aa5-ed76-4be7-a292-4c64e36a4ab5" width="1200" height="2541"/> | 
+<img src="https://github.com/user-attachments/assets/3350eff3-9bf9-49e6-be80-18b31127aa21" width="1200" height="2541"/> | 
+<img src="https://github.com/user-attachments/assets/37769da1-5a81-4baf-82f8-afcb2b589fe0" width="1200" height="2541"/> |
 
 <br/>
 
