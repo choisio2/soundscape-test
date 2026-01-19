@@ -19,25 +19,29 @@
 - **히스토리 관리**: Room DB를 활용하여 최근 추천받은 몰입 테마 기록 저장 및 관리
 - **소셜 로그인**: Kakao OAuth를 이용한 간편 로그인 및 사용자 인증
 
+<br/>
 
 ## 🎨 UI
 
 |소셜 로그인|홈화면|라이브러리|
-|---|---|---|---|
+|---|---|---|
 |<img width="1200" height="2541" alt="kakao_oauth_screenshot" src="https://github.com/user-attachments/assets/b4da05ba-b9bd-4c79-98f8-836cbcfbd08e" />|<img width="1200" height="2541" alt="home_screenshot" src="https://github.com/user-attachments/assets/0d2b0162-bf8d-40ab-b15c-96fe6d070e6e" />|<img width="1200" height="2541" alt="home_history_screenshot" src="https://github.com/user-attachments/assets/8f7f79b4-7e2e-4021-93c8-02841e9995be" />|
 
+<br/>
 
 |라이브러리|둘러보기|마이페이지|
-|---|---|---|---|
+|---|---|---|
 |<img width="1200" height="2541" alt="library_screenshot" src="https://github.com/user-attachments/assets/79c32ce5-c71f-4a04-8f1c-9dcaf01d38ba" />|<img width="1200" height="2541" alt="explore_screenshot" src="https://github.com/user-attachments/assets/a986aa0f-98c1-4108-9e90-88aab0955b64" />|<img width="1200" height="2541" alt="mypage_screenshot" src="https://github.com/user-attachments/assets/29d79fb3-3ef0-46b7-9b9e-0c4dbf1731b8" />|
 
+<br/>
 
 ## 📱 실행 화면 
 
 |온보딩|추천 받기|라이브러리|둘러보기|
-|--|--|--|--|
+|---|---|---|---|
 |![onboarding](https://github.com/user-attachments/assets/500f6079-8c37-428e-8069-7ab2987bedc9)|![recommendation](https://github.com/user-attachments/assets/15bf8aa5-ed76-4be7-a292-4c64e36a4ab5)|![library](https://github.com/user-attachments/assets/3350eff3-9bf9-49e6-be80-18b31127aa21)|![explore](https://github.com/user-attachments/assets/37769da1-5a81-4baf-82f8-afcb2b589fe0)|
 
+<br/>
 
 ## 🧑‍💻 팀원 소개
 
@@ -46,6 +50,7 @@
 |(깃허브 프로필 사진 링크)|사진2|사진3|사진4|사진5|
 |BE|BE|FE|FE|DA|
 
+<br/>
 
 ##  🛠 기술 스택
 
